@@ -4,9 +4,6 @@ public class App {
     public static void main(String[] args) throws Exception {
         int windowWidth = 800;
         int windowHeight = 500;
-        int money = 500;
-        int investedWinLoss + /*something like the stock change converted to a percentage times the invested stock*/;
-        int stockMoney = money + /*investedWinLoss*/;
 
         JLabel textLabel = new JLabel();
         JPanel textPanel = new JPanel();
@@ -27,7 +24,18 @@ public class App {
         textLabel.setVerticalAlignment(JLabel.BOTTOM);
         textLabel.setOpaque(true);
         textLabel.setText("Money:" + money);
+
+        if(stockMoney => 100) {
+            //end game
+            System.out.println("You Win!!");
+        } else if(stockMoney =< 0) {
+            //end game
+            System.out.println("You Lose")
+        }
+
+        
     }
 }
+
 
 
