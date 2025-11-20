@@ -9,7 +9,7 @@ public class App {
         frame.setVisible(true);
         frame.setSize(windowWidth, windowHeight);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLocation(0, 0);
+        frame.setLocationRelativeTo(null);
         frame.setResizable(false);
 
         StockMarket stockMarket = new StockMarket(windowWidth, windowHeight);
