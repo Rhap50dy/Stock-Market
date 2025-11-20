@@ -2,17 +2,20 @@ import java.awt.*;
 import java.util.random.*;
 import java.util.ArrayList;
 import java.awt.event.*;
+import java.util.Random;
 import javax.swing.*;
 
 public class StockMarket extends JPanel {
     int windowWidth = 800;
     int windowHeight = 500;
     int stock = 500;
-    double randomUpDown = Math.random();
-    int money = 500 + stock; //need to make it so that it only changes based on the money you have invested
+    int stockChange = stock + randomStock.stock;
+    int money = 500 + stockChange; //need to make it so that it only changes based on the money you have invested
     
     JLabel textLabel = new JLabel();
     JPanel textPanel = new JPanel();
+
+    RandomStock randomStock = new RandomStock();
 
     StockMarket(int windowWidth, int windowHeight) {
         this.windowWidth = windowWidth;
@@ -29,17 +32,8 @@ public class StockMarket extends JPanel {
         textPanel.setLayout(new BorderLayout());
         textPanel.add(textLabel);
 
-            while(true) {
-            if (randomUpDown < 0.47) {
-                stock = stock - 50;
-            } else {
-                stock = stock + 50;
-            }
-            try {
-                Thread.sleep(400);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
     }
 }
+
+
+
