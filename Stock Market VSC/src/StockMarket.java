@@ -1,12 +1,26 @@
 import java.awt.*;
-import java.util.random.*;
 import java.util.ArrayList;
 import java.awt.event.*;
-import java.util.Random;
 import javax.swing.*;
 
+public class StockMarket {
+    int stockLevel = 500; //max 1000 min 0 
+    RandomStockChange randomStockChange = new RandomStock
+
+    while(true) {
+        if(RandomStockChange = true) {
+            stockLevel + 50;
+            System.out.println(stockLevel); // for testing purposes
+        } else {
+            stockLevel - 50;
+            System.out.println(stockLevel)
+        }
+    }
+}
+
+/* I am shutting down this class because I think the code is in the wrong places so i will rewrite it neater. i am keeping it just in case
 public class StockMarket extends JPanel {
-    int windowWidth = 800;
+    int windowWidth = 800;  //should this code be in the app file? i feel like StockMarket should not inlcude the window.
     int windowHeight = 500;
     int stock = 500;
     int stockChange = stock + randomStock.stock;
@@ -34,6 +48,7 @@ public class StockMarket extends JPanel {
 
     }
 }
+*/
 
 
 
