@@ -1,23 +1,14 @@
-public bool RandomStock(bool stockbool) {
-    double randomUpDown = Math.random();
+import java.util.Random;
 
-    public RandomStock() {
-        while(true) {
-            if (randomUpDown < 0.47) {
-                return(stock - 50);
-                System.out.println("stock down");
-            } else {
-                return(stock + 50);
-                System.out.println("stock up");
-            }
-            try {
-                Thread.sleep(400);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-    
+public bool RandomStock() {
+    Random random = new Random;
+    return random.nextBoolean();
 }
+   
+
+
+    
+
+
 
 
