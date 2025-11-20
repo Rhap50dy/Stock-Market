@@ -1,4 +1,4 @@
-public class RandomStock {
+public bool RandomStock(bool stockbool) {
     double randomUpDown = Math.random();
 
     public RandomStock() {
@@ -19,4 +19,5 @@ public class RandomStock {
     }
     
 }
+
 
