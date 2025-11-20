@@ -11,9 +11,11 @@ public class App {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
+        frame.setColor(black);
 
         StockMarket stockMarket = new StockMarket(windowWidth, windowHeight);
         frame.add(stockMarket);
         frame.pack();    
     }
 }
+
