@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public bool RandomStockChange() {
+public bool BoolStockChange() {
     Random random = new Random;
     return random.nextBoolean();
 }
@@ -8,6 +8,7 @@ public bool RandomStockChange() {
 
 
     
+
 
 
 
