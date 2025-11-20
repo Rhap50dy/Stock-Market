@@ -16,6 +16,13 @@ public class StockMarket {
             System.out.println(stockLevel)
         }
     }
+
+    if(stockLevel => 1000) {
+        // end game
+        System.out.println("You Win!!");
+    } else if(stockLevel =< 0) {
+        // end game
+        System.out.println("You Lose")
 }
 
 /* I am shutting down this class because I think the code is in the wrong places so i will rewrite it neater. i am keeping it just in case
@@ -49,6 +56,7 @@ public class StockMarket extends JPanel {
     }
 }
 */
+
 
 
 
