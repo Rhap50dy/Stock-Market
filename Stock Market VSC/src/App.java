@@ -36,7 +36,7 @@ public class App {
         frame.pack();
 
 
-        Timer timer = new Timer(400, new ActionListener() {
+        Timer timer = new Timer(1000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 stockMarket.update();
@@ -46,6 +46,7 @@ public class App {
         timer.start();
     }
 }
+
 
 
 
