@@ -7,6 +7,8 @@ public class App {
 
         JLabel textLabel = new JLabel();
         JPanel textPanel = new JPanel();
+        JPanel button = new JButton("Buy Shares")
+        
 
         JFrame frame = new JFrame("Stock Market");
         frame.setVisible(true);
@@ -25,10 +27,10 @@ public class App {
         textLabel.setOpaque(true);
         textLabel.setText("Money:" + money);
 
-        if(stockMoney => 100) {
+        if(money => 100) {
             //end game
             System.out.println("You Win!!");
-        } else if(stockMoney =< 0) {
+        } else if(money =< 0) {
             //end game
             System.out.println("You Lose")
         }
@@ -36,6 +38,7 @@ public class App {
         
     }
 }
+
 
 
 
