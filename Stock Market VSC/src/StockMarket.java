@@ -1,28 +1,39 @@
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Random;
 import java.awt.event.*;
 import javax.swing.*;
 
 public class StockMarket {
     int stockPercent = 50; //used like a percent, this needs to be able to update
-    int stockPercentChange = stockPercent - 50; //this needs to be able to uptade
     int moneyIn = 5;
-    int moneyOutUncalculated = 0;
-    int moneyOutCalculated = moneyOutUncalculated * 
-    int money = moneyIn + moneyOutCalculated;
-
-    BoolStockChange boolStockChange = new RandomStock
-
-    while(true) {
-        if(boolStockChange = true) {
-            stockPercent + 2;
+    int money = 1000;
+    
+    Random random = new Random();
+    
+    public void update() {
+        if(random.nextDouble() > 0.4) {
+            stockPercent += 2;
             System.out.println("stock level up"); // for testing purposes
         } else {
-            stockPercent - 2;
-            System.out.println("stock level down")
+            stockPercent -= 2;
+            System.out.println("stock level down");
         }
-            try(system.sleep(400))
+
+        int stockPercentChange = stockPercent - 50; //this needs to be able to updade
+        int stockPrice = 10;
+        int moneyOutCalculated = stockPrice * stockPercentChange;
+        money = moneyIn + moneyOutCalculated;
+        
+        if(money >= 100) {
+            //end game
+            System.out.println("You Win!!");
+        } else if(money <= 0) {
+            //end game
+            System.out.println("You Lose");
+        }
     }
+}
 
 /* I am shutting down this class because I think the code is in the wrong places so i will rewrite it neater. i am keeping it just in case
 public class StockMarket extends JPanel {
