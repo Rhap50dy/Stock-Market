@@ -4,26 +4,25 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class StockMarket {
-    int stockLevel = 500; //max 1000 min 0 
-    RandomStockChange randomStockChange = new RandomStock
+    int stockPercent = 50; //used like a percent, this needs to be able to update
+    int stockPercentChange = stockPercent - 50; //this needs to be able to uptade
+    int moneyIn = 5;
+    int moneyOutUncalculated = 0;
+    int moneyOutCalculated = moneyOutUncalculated * 
+    int money = moneyIn + moneyOutCalculated;
+
+    BoolStockChange boolStockChange = new RandomStock
 
     while(true) {
-        if(RandomStockChange = true) {
-            stockLevel + 50;
-            System.out.println(stockLevel); // for testing purposes
+        if(boolStockChange = true) {
+            stockPercent + 2;
+            System.out.println("stock level up"); // for testing purposes
         } else {
-            stockLevel - 50;
-            System.out.println(stockLevel)
+            stockPercent - 2;
+            System.out.println("stock level down")
         }
+            try(system.sleep(400))
     }
-
-    if(stockLevel => 1000) {
-        // end game
-        System.out.println("You Win!!");
-    } else if(stockLevel =< 0) {
-        // end game
-        System.out.println("You Lose")
-}
 
 /* I am shutting down this class because I think the code is in the wrong places so i will rewrite it neater. i am keeping it just in case
 public class StockMarket extends JPanel {
@@ -56,6 +55,7 @@ public class StockMarket extends JPanel {
     }
 }
 */
+
 
 
 
