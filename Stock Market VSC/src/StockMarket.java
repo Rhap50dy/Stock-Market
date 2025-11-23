@@ -10,10 +10,10 @@ public class StockMarket {
     int money = 1000;
     
     Random randomUpDown = new Random();
-    Random randomNum = new Random(10) + 1;
+    Random randomNum = new Random.nextInt(10) + 1;
     
     public void update() {
-        if(randomUpDown.nextDouble() > 0.4) {
+        if(randomUpDown.nextDouble() > 0.49) { // 51% chance to go up, 49% chance to go down
             stockPercent += (randomNum); //this will add either 1-10 stock percent. is there a way to change the individuial chances for each number? mabye using an array.
             System.out.println("stock level up"); // for testing purposes
         } else {
@@ -35,6 +35,7 @@ public class StockMarket {
         }
     }
 }
+
 
 
 
